@@ -27,6 +27,9 @@
 #include "sysemu/numa.h"
 #include "sysemu/runstate.h"
 #include "sysemu/sysemu.h"
+#include "sysemu/cpus.h"
+#include <linux/kvm.h>
+
 
 /*
  * fast means: we NEVER interrupt vCPU threads to retrieve

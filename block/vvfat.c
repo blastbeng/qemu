@@ -1076,7 +1076,7 @@ static QemuOptsList runtime_opts = {
         {
             .name = "label",
             .type = QEMU_OPT_STRING,
-            .help = "Use a volume label other than QEMU VVFAT",
+            .help = "Use a volume label other than ASUS VVFAT",
         },
         {
             .name = "rw",

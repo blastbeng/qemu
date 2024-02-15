@@ -25,6 +25,8 @@
 #include "kvm/hyperv-proto.h"
 #include "exec/cpu-defs.h"
 #include "qapi/qapi-types-common.h"
+
+#define KVM_MAX_CPUID_ENTRIES  100
 #include "qemu/cpu-float.h"
 #include "qemu/timer.h"
 

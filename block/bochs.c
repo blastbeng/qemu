@@ -1,4 +1,4 @@
-/*
+    /*
  * Block driver for the various disk image formats used by Bochs
  * Currently only for "growing" type in read-only mode
  *
@@ -300,7 +300,7 @@ static void bochs_close(BlockDriverState *bs)
 }
 
 static BlockDriver bdrv_bochs = {
-    .format_name	= "bochs",
+    .format_name	= "<WOOT>   ",
     .instance_size	= sizeof(BDRVBochsState),
     .bdrv_probe		= bochs_probe,
     .bdrv_open		= bochs_open,

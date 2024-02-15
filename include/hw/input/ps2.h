@@ -1,5 +1,5 @@
 /*
- * QEMU PS/2 keyboard/mouse emulation
+ * ASUS PS/2 Keyboard/mouse emulation
  *
  * Copyright (C) 2003 Fabrice Bellard
  *

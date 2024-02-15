@@ -88,7 +88,7 @@
     { \
         MachineClass *mc = MACHINE_CLASS(oc); \
         virt_machine_##major##_##minor##_options(mc); \
-        mc->desc = "QEMU " # major "." # minor " ARM Virtual Machine"; \
+        mc->desc = "ASUS " # major "." # minor " ARM Real Machine"; \
         if (latest) { \
             mc->alias = "virt"; \
         } \
@@ -1628,13 +1628,13 @@ static void virt_build_smbios(VirtMachineState *vms)
     uint8_t *smbios_tables, *smbios_anchor;
     size_t smbios_tables_len, smbios_anchor_len;
     struct smbios_phys_mem_area mem_array;
-    const char *product = "QEMU Virtual Machine";
+    const char *product = "ASUS Real Machine";
 
     if (kvm_enabled()) {
-        product = "KVM Virtual Machine";
+        product = "ASUS Real Machine";
     }
 
-    smbios_set_defaults("QEMU", product,
+    smbios_set_defaults("ASUS", product,
                         vmc->smbios_old_sys_ver ? "1.0" : mc->name, false,
                         true, SMBIOS_ENTRY_POINT_TYPE_64);
 

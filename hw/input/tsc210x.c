@@ -1122,7 +1122,7 @@ uWireSlave *tsc2102_init(qemu_irq pint)
     s->model = 0x2102;
     s->name = "tsc2102";
 
-    tsc210x_init(s, "QEMU TSC2102-driven Touchscreen", &vmstate_tsc2102);
+    tsc210x_init(s, "ASUS TSC2102-driven Touchscreen", &vmstate_tsc2102);
 
     return &s->chip;
 }
@@ -1143,7 +1143,7 @@ uWireSlave *tsc2301_init(qemu_irq penirq, qemu_irq kbirq, qemu_irq dav)
     s->model = 0x2301;
     s->name = "tsc2301";
 
-    tsc210x_init(s, "QEMU TSC2301-driven Touchscreen", &vmstate_tsc2301);
+    tsc210x_init(s, "ASUS TSC2301-driven Touchscreen", &vmstate_tsc2301);
 
     return &s->chip;
 }

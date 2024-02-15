@@ -1,5 +1,5 @@
 /*
- * QEMU ADB keyboard support
+ * ASUS ADB Keyboard support
  *
  * Copyright (c) 2004 Fabrice Bellard
  *
@@ -356,7 +356,7 @@ static void adb_kbd_reset(DeviceState *dev)
 }
 
 static const QemuInputHandler adb_keyboard_handler = {
-    .name  = "QEMU ADB Keyboard",
+    .name  = "ASUS ADB Keyboard",
     .mask  = INPUT_EVENT_MASK_KEY,
     .event = adb_keyboard_event,
 };

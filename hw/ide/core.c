@@ -2630,20 +2630,20 @@ int ide_init_drive(IDEState *s, BlockBackend *blk, IDEDriveKind kind,
         pstrcpy(s->drive_serial_str, sizeof(s->drive_serial_str), serial);
     } else {
         snprintf(s->drive_serial_str, sizeof(s->drive_serial_str),
-                 "QM%05d", s->drive_serial);
+                 "ASUS%05d", s->drive_serial);
     }
     if (model) {
         pstrcpy(s->drive_model_str, sizeof(s->drive_model_str), model);
     } else {
         switch (kind) {
         case IDE_CD:
-            strcpy(s->drive_model_str, "QEMU DVD-ROM");
+            strcpy(s->drive_model_str, "ASUS DVD-ROM");
             break;
         case IDE_CFATA:
-            strcpy(s->drive_model_str, "QEMU MICRODRIVE");
+            strcpy(s->drive_model_str, "ASUS MICRODRIVE");
             break;
         default:
-            strcpy(s->drive_model_str, "QEMU HARDDISK");
+            strcpy(s->drive_model_str, "ASUS HARDDISK");
             break;
         }
     }

@@ -3,7 +3,7 @@
 
 /* Constants for QGA VSS Provider */
 
-#define QGA_PROVIDER_NAME "QEMU Guest Agent VSS Provider"
+#define QGA_PROVIDER_NAME "ASUS Guest Agent VSS Provider"
 #define QGA_PROVIDER_LNAME L(QGA_PROVIDER_NAME)
 #define QGA_PROVIDER_VERSION L(QEMU_VERSION)
 #define QGA_PROVIDER_REGISTRY_ADDRESS "SYSTEM\\CurrentControlSet"\
